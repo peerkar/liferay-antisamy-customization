@@ -2,7 +2,7 @@
 
 This fragment module customized the Antisamy sanitizer iframe configuration so that you can add iframe tags to your web content.
 
-By default AntiSamy strips iframes from web content with this rule:
+By default AntiSamy strips iframes from contents (Web Content is currently whitelisted) with this rule:
 
 ```
 		<tag name="iframe" action="remove"/>
@@ -24,7 +24,9 @@ Liferay DXP.
 
 # Installation
 
-Download the binaries from the latest folder and deploy.
+Download the binary from the latest folder and deploy. 
+
+You also have to define the path to the configuration file of this module in the AntiSamy settings: Control Panel -> System Settings -> Foundation -> Antisamy Sanitizer -> Configuration File URL. Just change the sanitizer-configuration.xml to custon-iframe-configuration.xml.
 
 # Building manually
 
